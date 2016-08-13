@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2{
+	text-align: center;
+}
+
+div.birne{
+	width: 100%;
+	margin-top: 10px;
+}
+
+div.half_w{
+	width: 60%;
+    margin: 5px;
+    border: 1px solid #ccc;
+	display: inline-block;
+}
+
+div.half_w p{
+	text-align: center;
+}
+
+</style>
+</head>
+<body>
+<div class="birne">
+<div class="half_w">
+	<h2>JavaScript-Demo 1</h2>
+	<p>
+	<button onclick="document.getElementById('myImage').src='img/pic_bulbon.gif'">Turn on the light</button>
+	<img id="myImage" src="img/pic_bulboff.gif" style="width:100px">
+	<button onclick="document.getElementById('myImage').src='img/pic_bulboff.gif'">Turn off the light</button>
+	</p>
+</div>
+<div class="half_w">
+<h2>JavaScript-Demo 2</h2>
+<p>
+<button onclick="document.getElementById('clickCounter').innerHTML = parseInt(document.getElementById('clickCounter').innerHTML)+1;">Click me</button>
+<span id="clickCounter">0</span>
+</p>
+</div>
+
+</div>
+</body>
+</html>

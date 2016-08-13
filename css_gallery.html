@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2{
+	text-align: center;
+}
+
+div.img {
+    position: relative;
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 300px;
+	overflow: hidden;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    position: absolute;
+    top: 0px;
+    padding: 15px;
+    text-align: center;
+    color: rgba(0,0,0,0);
+    height: 100%;
+	font-weight: bold;
+	transition: 0.6s ease-in-out 0s;
+}
+
+div.desc:hover{
+    color: #FFF;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+</style>
+</head>
+<body>
+<h2>Interaktive Gallerie</h2>
+<div class="img">
+  <a target="_blank" href="img/img_fjords.jpg">
+    <img src="img/img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="img/img_forest.jpg">
+    <img src="img/img_forest.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="img/img_lights.jpg">
+    <img src="img/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="img/img_mountains.jpg">
+    <img src="img/img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+</body>
+</html>
