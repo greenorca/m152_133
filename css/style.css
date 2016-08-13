@@ -1,0 +1,11 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333; }
+
+section .body {
+  column-count: 3;
+  column-gap: 30px;
+  -moz-column-count: 3;
+  -moz-column-gap: 30px; }
+
+/*# sourceMappingURL=style.css.map */
