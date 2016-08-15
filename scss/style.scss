@@ -155,10 +155,9 @@ article{
 
 @font-face {
   font-family: 'topomedics';
-  src: url("../fonts/topomedics.eot?99l2d9");
-  src: url("../fonts/topomedics.eot?99l2d9#iefix") format("embedded-opentype"), 
-  			/*url("../fonts/topomedics.ttf?99l2d9") format("truetype"),*/ 
-  			url("../fonts/topomedics.woff?99l2d9") format("woff");
+	  src: url("../fonts/topomedics.eot?99l2d9"),
+	  	url("../fonts/topomedics.eot?99l2d9#iefix") format("embedded-opentype"), 
+  		url("../fonts/topomedics.woff?99l2d9") format("woff");
   			/*url("../fonts/topomedics.svg?99l2d9#topomedics") format("svg");*/
   font-weight: normal;
   font-style: normal;
@@ -181,8 +180,22 @@ article{
 	}
 }
 
-footer{
+footer, div.footer{
 	text-align: center;
+	/* svg styling */
+	svg{
+		width: 32px;
+		height: 32px;
+		margin-right: 5px;		
+	}
+
+	svg>path{
+		fill: yellow;
+	}
+
+	svg>path:hover{
+		fill: red;
+	}
 }
 
 [class^="topomed-"],
