@@ -4,7 +4,7 @@ class MySQLTables{
 	
 private $servername = "localhost";
 private $username = "sven";
-private $password = "sven";
+private $password = "guggus";
 private $dbname = "m105_topomedics_mig";
 
 function __construct(){
