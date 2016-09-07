@@ -1,0 +1,25 @@
+        <footer class="content">
+            <a href="http://www.google.com"><span class="topomed-google"></span></a>
+            <a href="http://www.facebook.com"><span class="topomed-facebook"></span></a>
+            <a href="http://wwww.twitter.com"><span class="topomed-twitter"></span></a>
+            <a href="http://behance.com"><span class="topomed-behance"></span></a>
+            <a href="http://github.io"><span class="topomed-github"></span></a>
+            <a href="http://vimeo"><span class="topomed-vimeo"></span></a>
+        </footer>
+
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap_hover_dropdown.js"></script>
+    <script type="text/javascript">
+    	jQuery.noConflict();
+    	(function($){
+    		$('li.hot').on('click',function (ev) {
+    			currentValue = $(this).find(">:first-child").text();
+    			$(this).find(">:first-child").text(1+Number(currentValue));
+    			//alert(ev);
+    		});
+    	})(jQuery);
+    </script>
+</body>
+</html>

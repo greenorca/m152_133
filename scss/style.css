@@ -35,6 +35,10 @@ img.logo:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
 
+img.gallery_pic {
+  width: 100%;
+  margin: 3px; }
+
 .logo_title h1, .logo_title h2, .logo_title h3, .logo_title h4 {
   transition: .2s ease-in-out 0s;
   font-weight: bold;
@@ -114,6 +118,14 @@ article section p {
     background-color: white;
     color: red;
     font-weight: bold; }
+
+form {
+  background-color: #eee; }
+  form fieldset div .error_help_msg {
+    display: none;
+    color: red; }
+  form fieldset div .error_help_msg.active {
+    display: block; }
 
 footer, div.footer {
   text-align: center;

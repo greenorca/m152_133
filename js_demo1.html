@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="icon" type="image/ico" href="favicon.ico">
 <style>
 h2{
 	text-align: center;
@@ -22,6 +23,21 @@ div.half_w p{
 	text-align: center;
 }
 
+       h1{ 
+               font-weight: bold;  
+               color: red; 
+               font-size: 2em;
+               font-family: serif;
+      }
+       .haiku{ 
+	text-decoration: underline; 
+	color: blue;	 
+        } 
+       body{
+               background-color: #777;
+               font-family: sans-serif;
+       }
+
 </style>
 </head>
 <body>
@@ -37,11 +53,29 @@ div.half_w p{
 <div class="half_w">
 <h2>JavaScript-Demo 2</h2>
 <p>
-<button onclick="document.getElementById('clickCounter').innerHTML = parseInt(document.getElementById('clickCounter').innerHTML)+1;">Click me</button>
+<button onclick="clickCounter()">Click me</button>
 <span id="clickCounter">0</span>
 </p>
 </div>
 
 </div>
+<div>
+  <h1 class="haiku" style="color: black">Haiku from Jack Kerouac</h1> 
+  <p>Snow in my shoe<br /> 
+        Abandoned<br /> 
+        <b>Sparrow's nest</b> 	 
+   </p> 
+</div>
+<script type="text/javascript">
+function clickCounter(){
+	var element;
+	var x;
+	element = document.getElementById('clickCounter');
+	x = parseInt(document.getElementById('clickCounter').innerHTML);
+	x = x+1;
+	element.innerHTML = x;	
+}
+</script>
+
 </body>
 </html>

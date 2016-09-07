@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<meta charset="utf-8"/>	
+    <title>ZOOM</title>
+    <link rel="stylesheet" href="css/screen.min.css" media="screen">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <style type="text/css">
+    #picHolder {
+        width: 800px;
+        height: 800px;
+        margin: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <section class="content">
+        <h1>ZOOM - LOGO</h1>
+        <div id="slider">5%
+            <input id="slide" type="range" min="5" max="200" step="5" value="100" /> 200%</div>
+        <br/>
+        <p><span id="chosen">100</span>%</p>
+        <div id="picHolder">
+            <img id="pic" src="img/logo.png" alt="Logo" />
+        </div>
+    </section>
+    <!--script type="text/javascript">
+    function updateSlider(slideAmount) {
+        var display = document.getElementById("chosen");
+        display.innerHTML = slideAmount;
+        var pic = document.getElementById("pic");
+        pic.style.width = slideAmount + "%";
+        pic.style.height = slideAmount + "%";
+    }
+    
+    document.getElementById("slide").addEventListener("change",updateSlider(this.value), false);
+    </script-->
+    
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+    $(function () {
+			$('#slide').change(function () {
+				value = $('#slide').val();
+				$('#chosen').html(value);
+				$('#pic').css({'width':value+"%", 'height':value+"%"});
+			})    	
+    	
+    })
+    </script>
+</body>
+
+</html>

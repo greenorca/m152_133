@@ -52,6 +52,11 @@ img.logo:hover {
     filter: grayscale(100%);
 }
 
+img.gallery_pic{
+	width:100%;
+	margin: 3px;
+}
+
 .logo_title{
 
 	h1, h2, h3, h4{
@@ -177,6 +182,23 @@ article{
 		background-color: white;
 		color: red;
 		font-weight: bold;
+	}
+}
+
+form{
+
+	background-color: #eee;
+	
+	fieldset div{
+		
+		.error_help_msg{
+			display: none;
+			color: red;		
+		}	
+		
+		.error_help_msg.active{
+			display: block;		
+		} 
 	}
 }
 
